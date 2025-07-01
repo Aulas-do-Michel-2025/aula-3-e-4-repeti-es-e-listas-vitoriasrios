@@ -25,3 +25,20 @@ Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
 
 Fonte: Curso em vídeo.
 """
+
+
+
+def calcular_fatorial(n):
+    fatorial = 1
+    for i in range(1, n + 1):
+        fatorial *= i
+    return fatorial
+
+
+numero = int(input("Digite um número: "))
+
+
+resultado = calcular_fatorial(numero)
+
+print(f"O fatorial de {numero} é {resultado}.")
+
